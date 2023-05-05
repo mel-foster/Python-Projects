@@ -21,7 +21,7 @@ while count != ec2_count:
         print("\n")
         count +=1
     elif not ec2_name in depts: #Error:User did not enter correct dept, misspelled, or uppercase character(s)
-        ec2_name =str(input("\nError: Incorrect Department or verify spelling. Note: Dept. Name is Case Sensitive. Please, try again and select from one of the following departments: Accounting, FinOps, or Marketing\n")
+        ec2_name =str(input("\nError: This Generator is for Specified Departments ONLY. Note: Dept. Name is Case Sensitive. Please, try again and select from one of the following departments: Accounting, FinOps, or Marketing\n")
         if ec2_name in depts: #confirm new entry is correct
             print(ec2_name + ec2_range(13)) #confirmation print statement has both requirements of  dept name and generated character
             count += 1
